@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">EDIT map title</div>
+  <div id="map-title">Hartford Map</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -27,7 +27,7 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [41.77, -72.69], // EDIT coordinates to re-center map
+    center: [35.7796, -78.6382], // EDIT coordinates to re-center map
     zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false
   });
@@ -41,8 +41,20 @@
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  L.marker([35.7847, -78.6821]).addTo(map) // EDIT marker coordinates
+  .bindPopup("NCSU"); // EDIT pop-up text message
+
+  /* Display a point marker with pop-up text */
+  L.marker([35.7818, -78.6763]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Jordan Hall"); // EDIT pop-up text message
+
+  /* Display a point marker with pop-up text */
+  L.marker([35.774998809213066, -78.63223861746097]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Benchwarmers Bagels"); // EDIT pop-up text message
+
+  /* Display a point marker with pop-up text */
+  L.marker([  35.6965621217419, -78.69993556944779]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Lake Wheeler"); // EDIT pop-up text message
 
   </script>
 </body>
